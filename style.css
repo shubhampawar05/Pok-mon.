@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+}
+header{
+    text-align: center;
+}
+
+
+.card{
+    margin: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+.frontside {
+    width: 150px;
+    height: 250px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    /* position: absolute; */
+    position: relative;
+}
+
+.frontside:hover{
+    transform: rotateY(180deg);
+    transition: all 1.5s ease;
+    /* display: none; */
+}
+.backside{
+    width: 150px;
+    height: 250px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    transition: all 3s ease;
+    /* position: absolute;
+     */
+     position: relative;
+    /* display: none; */
+    transform: rotateY(180deg);
+
+}
+.backside:hover{
+    transform: rotateY(0deg);
+    transition: all 3s ease;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+#grass {
+    background-color: #9bcc50;
+}
+
+#bug {
+    background-color: #729f3f;
+}
+
+#fire {
+    background-color :#fd7d24;
+}
+
+#water {
+    background-color: #4592c4;
+}
+
+#ice {
+    background-color: #51c4e7;
+}
+
+#electric {
+    background-color: #eed535;
+}
+
+#psychic {
+    background-color:  #f366b9;
+}
+
+
+#fairy {
+    background-color: #fdb9e9;
+}
+
+#ghost {
+    background-color: #7b62a3;
+}
+
+#ground {
+    background-color: #f7de3f;
+}
+
+#poison {
+    background-color: #b97fc9;
+}
+
+#fairy {
+    background-color: #fdb9e9;
+}
+
+#normal {
+    background-color: #a4acaf;
+}
+
+#dragon {
+    background-color: goldenrod;
+}
+
+#fighting {
+    background-color: #d56723;
+}
+
+#rock {
+    background-color: #a38c21;
+}
