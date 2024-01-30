@@ -5,6 +5,9 @@ let resetBtn = document.querySelector('#resetbtn');
 let inputValue = document.querySelector('input');
 let NameMap = {};
 
+
+const firstPageData = [];
+
 inputValue.addEventListener('keydown',()=>{
     inputValue.value
 })
@@ -169,6 +172,12 @@ for (let i = 1; i <= 151; i++) {
     fetch(url)
     .then(Response => Response.json())
     .then(parsedData =>{
+
+        firstPageData = 
+
+
+
+
             // console.log(parsedData);
             let pokiiitype = parsedData.types[0].type.name;
             let pokiUrl = parsedData.sprites.front_default
@@ -232,8 +241,6 @@ for (let i = 1; i <= 151; i++) {
             }else if (pokiiitype=='rock'){
                 imgDiv.setAttribute('id','rock');
             }
-
-            
         }
         
     )}
@@ -242,5 +249,5 @@ for (let i = 1; i <= 151; i++) {
 
 
 
-firstPage();
-fatchingDatatype();
+window.onload = firstPage;
+    // fatchingDatatype();
